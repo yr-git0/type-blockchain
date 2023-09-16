@@ -3,8 +3,10 @@
   "compilerOptions": {
     "outDir": "build", // ts > js로 컴파일한 결과 파일을 둘 곳
     "target": "ES6", // 컴파일 결과로 보여줄 js 버전
-    "lib": ["ES6", "dom"], // "ES6문법으로 DOM(브라우저)에서 사용할 것이다"를 나타냄
+    "lib": ["ES6"], // "ES6문법으로 DOM(브라우저)에서 사용할 것이다"를 나타냄
     "strict": true, // 타입스크립트가 좀 더 엄격한 오류 검사를 할 것이다.
-    "allowJs": true // JS파일을 허용할 것이다.
+    // "allowJs": true, // JS파일을 허용할 것이다.
+    "esModuleInterop": true,
+    "module": "CommonJS"
   }
 }
